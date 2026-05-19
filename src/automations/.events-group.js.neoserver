@@ -1,0 +1,236 @@
+import { GroupEventType, MessageType } from "../api-zalo/models/index.js";
+import { getUserInfoData } from "../Nqduan-service/info-service/user-info.js";
+import * as cv from "../utils/canvas/index.js";
+import { readGroupSettings, writeGroupSettings } from "../utils/io-json.js"; 
+import { getBotId, isAdmin } from "../index.js";
+import fs from 'fs';
+import path from 'path';
+
+/* --- SĐT Admin cố định (lấy từ replytag.js) --- */
+const ADMIN_PHONE_NUMBER = "+84328743417 "; /* SĐT để tìm và gửi card */
+
+const blockedMembers = new Map();
+const BLOCK_CHECK_TIMEOUT = 300;
+function getGroupSettingsPath(threadId) {
+  return path.join(process.cwd(), `assets/groups-data/${threadId}settings_groups.json`);
+}
+function readGroupSpecificSettings(threadId) {
+  const filePath = getGroupSettingsPath(threadId);
+  try {
+    if (fs.existsSync(filePath)) {
+      return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    }
+  } catch (error) {
+    console.error(`Error reading group settings file for ${threadId}:`, error);
+  }
+  return {};
+}
+function writeGroupSpecificSettings(threadId, settings) {
+  const filePath = getGroupSettingsPath(threadId);
+  try {
+    fs.writeFileSync(filePath, JSON.stringify(settings, null, 2), 'utf8');
+  } catch (error) {
+    console.error(`Error writing group settings file for ${threadId}:`, error);
+  }
+}
+
+function logSettingsChanges(oldSettings, newSettings, changerId, threadId) {
+  const settingNames = {
+    blockName: "Chặn thay đổi biệt danh",
+    signAdminMsg: "Tin nhắn quản trị",
+    addMemberOnly: "Chỉ QTV thêm thành viên",
+    setTopicOnly: "Chỉ QTV đặt chủ đề",
+    enableMsgHistory: "Lịch sử tin nhắn",
+    joinAppr: "Duyệt thành viên",
+    lockCreatePost: "Khóa đăng bài",
+    lockCreatePoll: "Khóa tạo bình chọn",
+    lockSendMsg: "Khóa gửi tin nhắn",
+    lockViewMember: "Khóa xem thành viên",
+    bannFeature: "Tính năng cấm",
+    dirtyMedia: "Phương tiện nhạy cảm",
+    banDuration: "Thời gian cấm"
+  };
+
+  for (const key in newSettings) {
+    if (oldSettings[key] !== newSettings[key]) {
+      const changerInfo = `Người thay đổi: ${changerId}`;
+      const settingName = settingNames[key] || key;
+      const groupInfo = `Nhóm: ${threadId}`;
+    }
+  }
+}
+
+async function sendGroupMessage(api, threadId, imagePath, messageText) {
+  const message = messageText ? messageText : "";
+  try {
+    await api.sendMessage(
+      {
+        msg: message,
+        attachments: imagePath ? [imagePath] : [],
+        ttl: 3600000
+      },
+      threadId,
+      MessageType.GroupMessage
+    );
+  } catch (error) {
+    console.error("Lỗi khi gửi tin nhắn tới group:", error);
+  }
+}
+
+export async function groupEvents(api, event) {
+  const type = event.type;
+  const { updateMembers } = event.data;
+  const groupName = event.data.groupName;
+  const threadId = event.threadId;
+  const groupType = event.data.groupType;
+  const idAction = event.data.sourceId;
+  const groupSetting = event.data.groupSetting;
+
+  const groupSettings = readGroupSettings();
+  const threadSettings = groupSettings[threadId] || {};
+if (type === GroupEventType.UPDATE_SETTING && groupSetting && threadSettings.updateGroup) {
+  const oldSettings = readGroupSpecificSettings(threadId);
+  
+  /* --- SỬA LỖI: Kiểm tra idAction trước khi dùng --- */
+  let changerInfo = {};
+  let changerName = "Không rõ";
+  if (idAction) {
+    changerInfo = await getUserInfoData(api, idAction);
+    changerName = changerInfo.name || idAction;
+  }
+  /* --- KẾT THÚC SỬA LỖI --- */
+  
+  const isFirstTime = Object.keys(oldSettings).length === 0;
+  
+  if (isFirstTime) {
+    
+    /* --- SỬA LỖI: Đảm bảo changerInfo có dữ liệu --- */
+    const imagePath = await cv.createSettingChangeImage(
+      changerInfo, // Sử dụng biến đã được kiểm tra
+      groupName,
+      null, 
+      null,
+      changerName
+    );
+    
+    await sendGroupMessage(api, threadId, imagePath, "");
+    await cv.clearImagePath(imagePath);
+    
+    
+    writeGroupSpecificSettings(threadId, groupSetting);
+  } else {
+    
+    for (const key in groupSetting) {
+      if (oldSettings[key] !== groupSetting[key]) {
+        logSettingsChanges(oldSettings, groupSetting, idAction, threadId);
+        
+        /* --- SỬA LỖI: Đảm bảo changerInfo có dữ liệu --- */
+        const imagePath = await cv.createSettingChangeImage(
+          changerInfo, // Sử dụng biến đã được kiểm tra
+          groupName,
+          key, 
+          groupSetting[key],
+          changerName
+        );
+        
+        await sendGroupMessage(api, threadId, imagePath, "");
+        await cv.clearImagePath(imagePath);
+      }
+    }
+    
+    writeGroupSpecificSettings(threadId, groupSetting);
+  }
+}
+
+  
+  if (type === GroupEventType.ADD_ADMIN && updateMembers?.length > 0 && threadSettings.updateGroup) {
+    /* --- SỬA LỖI: Kiểm tra idAction trước khi dùng --- */
+    let changerInfo = {};
+    let changerName = "Không rõ";
+    if (idAction) {
+      changerInfo = await getUserInfoData(api, idAction);
+      changerName = changerInfo.name || idAction;
+    }
+    /* --- KẾT THÚC SỬA LỖI --- */
+    
+    for (const user of updateMembers) {
+      /* --- SỬA LỖI: Kiểm tra user.id trước khi dùng --- */
+      if (!user || !user.id) continue; // Bỏ qua nếu user.id bị null
+      const userInfo = await getUserInfoData(api, user.id);
+      /* --- KẾT THÚC SỬA LỖI --- */
+      const imagePath = await cv.createAdminAddedImage( 
+        userInfo,
+        groupName,
+        changerName
+      );
+      
+      await sendGroupMessage(api, threadId, imagePath, "");
+      await cv.clearImagePath(imagePath);
+    }
+  }
+
+  
+  if (type === GroupEventType.REMOVE_ADMIN && updateMembers?.length > 0 && threadSettings.updateGroup) {
+    /* --- SỬA LỖI: Kiểm tra idAction trước khi dùng --- */
+    let changerInfo = {};
+    let changerName = "Không rõ";
+    if (idAction) {
+      changerInfo = await getUserInfoData(api, idAction);
+      changerName = changerInfo.name || idAction;
+    }
+    /* --- KẾT THÚC SỬA LỖI --- */
+    
+    for (const user of updateMembers) {
+      /* --- SỬA LỖI: Kiểm tra user.id trước khi dùng --- */
+      if (!user || !user.id) continue; // Bỏ qua nếu user.id bị null
+      const userInfo = await getUserInfoData(api, user.id);
+      /* --- KẾT THÚC SỬA LỖI --- */
+      const imagePath = await cv.createAdminRemovedImage( 
+        userInfo,
+        groupName,
+        changerName
+      );
+      
+      await sendGroupMessage(api, threadId, imagePath, "");
+      await cv.clearImagePath(imagePath);
+    }
+  }
+
+  /* --- SỬA ĐIỀU KIỆN (VỊ TRÍ 1): Thay đổi logic check prWelcomeEnabled --- */
+  if ((type === GroupEventType.JOIN && !threadSettings.welcomeGroup && threadSettings.prWelcomeEnabled !== true) ||
+      (type === GroupEventType.LEAVE && !threadSettings.byeGroup)) {
+    return;
+  }
+
+  if (updateMembers) {
+    if (updateMembers.length === 1) {
+      const user = updateMembers[0];
+      const userId = user.id;
+
+      /* --- SỬA LỖI: Kiểm tra userId trước khi dùng (LỖI CHÍNH TRONG ẢNH) --- */
+      if (!userId) {
+        console.error("[events-group] Lỗi: Không tìm thấy userId trong updateMembers");
+        return; // Dừng lại để tránh crash
+      }
+      const userInfo = await getUserInfoData(api, userId);
+      /* --- KẾT THÚC SỬA LỖI --- */
+      
+      /* --- SỬA LỖI: Kiểm tra idAction trước khi dùng (LỖI CHÍNH TRONG ẢNH) --- */
+      let userActionInfo = {};
+      let userActionName = "Không rõ"; // Đặt tên mặc định
+      if (idAction) {
+        userActionInfo = await getUserInfoData(api, idAction);
+        userActionName = userActionInfo.name || idAction; // Lấy tên nếu có
+      }
+      /* --- KẾT THÚC SỬA LỖI --- */
+      
+      const idBot = getBotId();
+      const isAdminBot = isAdmin(userId, threadId);
+
+      let imagePath;  
+      let messageText = "";  
+
+      switch (type) {  
+        case GroupEventType.JOIN_REQUEST:  
+          console.log(event);  
+          break

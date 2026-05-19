@@ -1,0 +1,136 @@
+import { removeMention } from "../../utils/format-util.js";
+import { sendMessageFailed } from "../chat-zalo/chat-style/chat-style.js";
+import { getGlobalPrefix } from "../service.js";
+import { getUserInfoData } from "./user-info.js";
+import { getQRLinkFactory } from "../../api-zalo/apis/getQRZalo.js";
+import { ZaloApiError, MessageType } from "../../api-zalo/index.js";
+import { makeURL, encodeAES } from "../../api-zalo/utils.js";
+import { request } from "../../api-zalo/utils.js";
+import { resolveResponse } from "../../api-zalo/utils.js";
+
+export async function sendBusinessCardWithAvatar(api, userId, phone, type, threadId, ttl = 0) {
+  if (!userId) throw new ZaloApiError("Missing userId");
+
+  const appContext = api?.appContext || api;
+  if (!appContext || !appContext.secretKey) {
+    throw new ZaloApiError("Missing appContext or secretKey");
+  }
+
+  // Tạo utils tương tự như trong apiFactory
+  const utils = {
+    makeURL(baseURL, params, fillZpw) {
+      return makeURL(appContext, baseURL, params, fillZpw);
+    },
+    encodeAES(data, t) {
+      return encodeAES(appContext.secretKey, data, t);
+    },
+    request(url, options) {
+      return request(appContext, url, options);
+    },
+    resolve(res, cb) {
+      return resolveResponse(appContext, res, cb);
+    },
+  };
+
+  const directMessageServiceURL = utils.makeURL(`${api.zpwServiceMap.file[0]}/api/message/forward`);
+  const groupMessageServiceURL = utils.makeURL(`${api.zpwServiceMap.file[0]}/api/group/forward`);
+
+  // Lấy thông tin user để lấy avatar
+  const userInfo = await getUserInfoData(api, userId);
+  if (!userInfo || !userInfo.avatar) {
+    throw new ZaloApiError("Không thể lấy avatar của người dùng");
+  }
+
+  // Lấy gUid từ QR profile
+  let gUid = "";
+  try {
+    const getQRLink = getQRProfileUserFactory(api, appContext);
+    const qrData = await getQRLink(userId);
+    const qrInfo = qrData?.[userId.toString()] || qrData;
+    if (qrInfo && typeof qrInfo === "object" && qrInfo.gUid) {
+      gUid = qrInfo.gUid;
+    }
+  } catch (e) {
+    console.warn("Không lấy được gUid:", e.message);
+  }
+
+  const params = {
+    ttl: ttl,
+    msgType: 6,
+    clientId: Date.now().toString(),
+    msgInfo: {
+      contactUid: userId.toString(),
+      qrCodeUrl: userInfo.avatar, // Thay QR bằng avatar URL
+      avatarUrl: userInfo.avatar, // Thêm avatar URL
+      gUid: gUid, // Thêm gUid nếu có
+    },
+  };
+
+  if (phone) {
+    params.msgInfo.phone = phone.toString();
+  }
+
+  if (type === MessageType.DirectMessage) {
+    params.toId = threadId.toString();
+    params.imei = appContext.imei;
+  } else {
+    params.visibility = 0;
+    params.grid = threadId.toString();
+  }
+
+  params.msgInfo = JSON.stringify(params.msgInfo);
+
+  const encryptedParams = utils.encodeAES(JSON.stringify(params));
+  if (!encryptedParams) throw new ZaloApiError("Failed to encrypt params");
+
+  const serviceURL = type === MessageType.DirectMessage ? directMessageServiceURL : groupMessageServiceURL;
+
+  const response = await utils.request(serviceURL, {
+    method: "POST",
+    body: new URLSearchParams({
+      params: encryptedParams,
+    }),
+  });
+
+  return await utils.resolve(response);
+}
+
+export async function userBussinessCardCommand(api, message, aliasCommand) {
+  const threadId = message.threadId;
+  const senderId = message.data.uidFrom;
+  const prefixCommand = getGlobalPrefix(api.getBotId());
+  const content = removeMention(message);
+  let textString = content.replace(`${prefixCommand}${aliasCommand}`, "").trim();
+
+  try {
+    let targetUserId = [];
+
+    if (message.data.mentions?.length > 0) {
+      targetUserId = message.data.mentions.map((mention) => mention.uid);
+    } else {
+      const idMatch = textString.match(/^(\d+)\s*(.*)/);
+      if (idMatch) {
+        targetUserId = [idMatch[1]];
+        textString = idMatch[2].trim();
+      } else {
+        targetUserId = [senderId];
+      }
+    }
+
+    if (textString.includes("-f")) {
+      textString = textString.replace("-f", "").trim();
+      const idTo = message.data?.idTo || threadId;
+      if (!targetUserId.includes(idTo) && message.type === 0) {
+        targetUserId.splice(targetUserId.indexOf(senderId), 1);
+        targetUserId.push(idTo);
+      }
+    }
+
+    for (const userId of targetUserId) {
+      await sendBusinessCardWithAvatar(api, userId, textString, message.type, threadId, 600000);
+    }
+  } catch (error) {
+    await sendMessageFailed(api, message, "Đã xảy ra lỗi khi gửi danh thiếp: " + error.message, true, 1500000);
+    console.error("Lỗi khi lấy thông tin người dùng:", error);
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "8192608244222025956": {
+    "name": "8192608244222025956",
+    "displayName": "Grizzly",
+    "createdBy": "Grizzly",
+    "createdAt": "2026-05-15T00:38:03.253Z",
+    "expiryAt": "2026-07-14T00:38:03.252Z",
+    "webPort": "2101",
+    "status": "running",
+    "database": "8192608244222025956",
+    "approved": false,
+    "approverId": null,
+    "approverName": null,
+    "rejected": false,
+    "rejecterId": null,
+    "rejecterName": null,
+    "rejectReason": null,
+    "rejectAt": null,
+    "lastUpdated": "2026-05-15T02:27:32.681Z",
+    "rejecter": "Nguyễn Khoii"
+  }
+}

@@ -1,0 +1,1880 @@
+{
+  "1143857867479102594": {
+    "userId": "1143857867479102594",
+    "name": "Trần Đức",
+    "level": 107,
+    "exp": 1327379,
+    "expToNextLevel": 2362861,
+    "money": 20885653,
+    "teamId": null,
+    "currentArea": 12,
+    "equipment": {
+      "rod": "rod_mythical",
+      "bait": "bait_gold"
+    },
+    "inventory": {
+      "fish": {
+        "Cá Diếc": 3,
+        "Cá Rô Đồng": 5,
+        "Tôm Tép": 5,
+        "Cá Chép Nhỏ": 1,
+        "Rễ Cây": 9,
+        "Ba Khía": 5,
+        "Cá Sấu Mõm Dài": 3,
+        "Cá Đối": 9,
+        "Tôm Tích": 6,
+        "Trăn Nước Khổng Lồ": 3,
+        "Cá Kèo": 11,
+        "Cá Thòi Lòi": 10,
+        "Cá Hề": 9,
+        "San Hô Gãy": 1,
+        "Cá Bướm": 5,
+        "Cá Sư Tử": 5,
+        "Sao Biển": 4,
+        "Cá Mó": 3,
+        "Nữ Thần San Hô": 1,
+        "Rùa Biển": 4,
+        "Cá Vàng Sa Mạc": 6,
+        "Bọ Cạp Nước": 8,
+        "Rùa Vàng": 7,
+        "Lươn Cát": 8,
+        "Phượng Hoàng Sa Mạc": 4,
+        "Thằn Lằn Bơi": 3,
+        "Thần Anubis": 3,
+        "Cá Chép Cát": 11,
+        "Xương Rồng": 2,
+        "Rồng Cát": 1,
+        "Bạch Tuộc Hơi": 9,
+        "Cá Chép Lửa": 1,
+        "Kỳ Nhông Lửa": 3,
+        "Linh Hồn của Ngọn Núi": 7,
+        "Rái Cá": 8,
+        "Rồng Núi Ngủ Yên": 5,
+        "Cá Chép Koi": 17,
+        "Đại Bàng Bắt Cá": 17,
+        "Cá Hồi Núi": 10,
+        "Cá Tầm Nhỏ": 7,
+        "Cá Tầm Trắng": 15,
+        "Lá Phong": 1,
+        "Sơn Thần": 4,
+        "Cá Voi Sát Thủ": 2,
+        "Cá Mập Búa": 1,
+        "Thủy Tinh Long": 13,
+        "Nàng Tiên Cá": 14,
+        "Nai Thần": 39,
+        "Chúa Tể của Rừng Già": 25,
+        "Cá Chép Cửu Vĩ": 30,
+        "Rùa Ngọc Bích": 36,
+        "Ếch Tinh": 5,
+        "Phấn Hoa": 2,
+        "Cá Tiên Bướm": 4,
+        "Tôm Cầu Vồng": 8,
+        "Phượng Hoàng Thiên Hà": 1,
+        "Cá Rô Sen": 1,
+        "Cá Sấu Con": 1,
+        "Cá Mập Greenland Cổ Đại": 1,
+        "Khỉ Tắm Suối": 1,
+        "Cua Hoàng Đế Nước Nóng": 4,
+        "Rùa Dung Nham": 2,
+        "Đá Nóng": 2
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 0,
+          "castsSinceLoss": 0
+        },
+        {
+          "id": "rod_mythical",
+          "currentDurability": 4950,
+          "castsSinceLoss": 1
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 3319,
+        "bait_shrimp": 3174,
+        "bait_gold": 3616,
+        "bait_legendary": 2433,
+        "bait_super": 379
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 1166,
+      "mapsDiscovered": [
+        1,
+        3,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        11
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 451,
+      "junkCaught": 17,
+      "commonCaught": 124,
+      "rareCaught": 228,
+      "legendaryCaught": 46,
+      "mythicalCaught": 36,
+      "gachaSpins": 1317,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760162670885,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760142575662
+      },
+      "rookie_angler": {
+        "claimed": true,
+        "date": 1760142629848
+      },
+      "first_rare": {
+        "claimed": true,
+        "date": 1760142696289
+      },
+      "first_legendary": {
+        "claimed": true,
+        "date": 1760142775835
+      },
+      "veteran_angler": {
+        "claimed": true,
+        "date": 1760143353039
+      },
+      "rare_hunter": {
+        "claimed": true,
+        "date": 1760145506151
+      },
+      "legendary_lord": {
+        "claimed": true,
+        "date": 1760145769899
+      }
+    },
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 21,
+        "activeQuests": [
+          {
+            "questId": "main_11",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_15",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_18",
+            "progress": 2,
+            "completed": false
+          },
+          {
+            "questId": "main_19",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_21",
+            "progress": 107,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 5633709
+  },
+  "6705764748681397169": {
+    "userId": "6705764748681397169",
+    "name": "Đạt",
+    "level": 97,
+    "exp": 46871,
+    "expToNextLevel": 910989,
+    "money": 12983730,
+    "teamId": null,
+    "currentArea": 9,
+    "equipment": {
+      "rod": "rod_mythical",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Cá Diếc": 23,
+        "Rác": 10,
+        "Cá Rô Đồng": 31,
+        "Tôm Tép": 24,
+        "Cá Chép Nhỏ": 9,
+        "Cá Trắm Cỏ": 7,
+        "Trăn Đất": 181,
+        "Cá Sấu Xiêm": 177,
+        "Rùa Cá Sấu": 181,
+        "Cá Sấu Con": 156,
+        "Rắn Nước": 144,
+        "Cá Piranha": 187,
+        "Thủy Quái Đầm Lầy": 58,
+        "Hydra Con": 68,
+        "Cá Sấu Chúa": 62,
+        "Bùn Lầy": 41
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 0,
+          "castsSinceLoss": 0
+        },
+        {
+          "id": "rod_mythical",
+          "currentDurability": 4821,
+          "castsSinceLoss": 6
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 214,
+        "bait_shrimp": 1358,
+        "bait_gold": 1603,
+        "bait_legendary": 2268,
+        "bait_super": 279
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {
+        "repair_kit": 1
+      },
+      "gachaTickets": 6970,
+      "mapsDiscovered": [
+        1,
+        9
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 1359,
+      "junkCaught": 51,
+      "commonCaught": 565,
+      "rareCaught": 555,
+      "legendaryCaught": 120,
+      "mythicalCaught": 68,
+      "gachaSpins": 497,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760185493300,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760142581332
+      },
+      "rookie_angler": {
+        "claimed": true,
+        "date": 1760142641321
+      },
+      "first_rare": {
+        "claimed": true,
+        "date": 1760142659318
+      },
+      "veteran_angler": {
+        "claimed": true,
+        "date": 1760143188111
+      },
+      "first_legendary": {
+        "claimed": true,
+        "date": 1760144545334
+      },
+      "rare_hunter": {
+        "claimed": true,
+        "date": 1760144919152
+      },
+      "legendary_lord": {
+        "claimed": true,
+        "date": 1760145208008
+      },
+      "master_angler": {
+        "claimed": true,
+        "date": 1760150784648
+      }
+    },
+    "lastDiemDanh": 1760144357619,
+    "diemDanhStreak": 1,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 22,
+        "activeQuests": [
+          {
+            "questId": "main_11",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_17",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_18",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_19",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_22",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 2922867
+  },
+  "3727382102919649284": {
+    "userId": "3727382102919649284",
+    "name": "对生活感到厌倦",
+    "level": 13,
+    "exp": 124,
+    "expToNextLevel": 309,
+    "money": 39982,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Tôm Tép": 8,
+        "Cá Rô Đồng": 6,
+        "Cá Trắm Cỏ": 1,
+        "Cá Diếc": 3,
+        "Cá Chép Nhỏ": 1,
+        "Rác": 1
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 80,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 250,
+        "bait_shrimp": 86,
+        "bait_gold": 20
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 112,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 20,
+      "junkCaught": 1,
+      "commonCaught": 17,
+      "rareCaught": 2,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760145719209,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760144016819
+      },
+      "first_rare": {
+        "claimed": true,
+        "date": 1760144037712
+      },
+      "rookie_angler": {
+        "claimed": true,
+        "date": 1760145621333
+      }
+    },
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 15,
+        "activeQuests": [
+          {
+            "questId": "main_09",
+            "progress": 2,
+            "completed": false
+          },
+          {
+            "questId": "main_10",
+            "progress": 940,
+            "completed": false
+          },
+          {
+            "questId": "main_11",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_14",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_15",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 8420
+  },
+  "2210267591389127442": {
+    "userId": "2210267591389127442",
+    "name": "Tờ Quang广报",
+    "level": 1,
+    "exp": 54,
+    "expToNextLevel": 100,
+    "money": 304,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Rác": 1
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 99,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 9
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 8,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 1,
+      "junkCaught": 1,
+      "commonCaught": 0,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760150144936,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760150139936
+      }
+    },
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 5,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 4,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 4,
+            "completed": false
+          },
+          {
+            "questId": "main_04",
+            "progress": 1,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 114
+  },
+  "5895090967778425490": {
+    "userId": "5895090967778425490",
+    "name": "Hoàng Sơn",
+    "level": 2,
+    "exp": 3,
+    "expToNextLevel": 110,
+    "money": 1454,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Tôm Tép": 1
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 99,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 29
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 11,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 1,
+      "junkCaught": 0,
+      "commonCaught": 1,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760163336752,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760163331752
+      }
+    },
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 6,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 4,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 2,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 54,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_06",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 293
+  },
+  "860691971709116076": {
+    "userId": "860691971709116076",
+    "name": "Đức Tài",
+    "level": 2,
+    "exp": 28,
+    "expToNextLevel": 110,
+    "money": 1508,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Rác": 1,
+        "Tôm Tép": 1
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 98,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 28
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 4,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 2,
+      "junkCaught": 1,
+      "commonCaught": 1,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760191284000,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760191271093
+      }
+    },
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 7,
+        "activeQuests": [
+          {
+            "questId": "main_02",
+            "progress": 2,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 58,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_06",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_07",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 329
+  },
+  "3459465759720396383": {
+    "userId": "3459465759720396383",
+    "name": "Minh Tuan",
+    "level": 2,
+    "exp": 11,
+    "expToNextLevel": 110,
+    "money": 1454,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Cá Rô Đồng": 1
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 99,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 29
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 5,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 1,
+      "junkCaught": 0,
+      "commonCaught": 1,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760194093984,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760194088984
+      }
+    },
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 6,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 4,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 2,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 54,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_06",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 301
+  },
+  "5149631375192990153": {
+    "userId": "5149631375192990153",
+    "name": "Minh Tuan",
+    "level": 2,
+    "exp": 14,
+    "expToNextLevel": 110,
+    "money": 1508,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Tôm Tép": 1,
+        "Rác": 1
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 98,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 28
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 14,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 2,
+      "junkCaught": 1,
+      "commonCaught": 1,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760194127458,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760194098512
+      }
+    },
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 7,
+        "activeQuests": [
+          {
+            "questId": "main_02",
+            "progress": 2,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 58,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_06",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_07",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 315
+  },
+  "8129733276973773676": {
+    "userId": "8129733276973773676",
+    "name": "La Kiệt",
+    "level": 2,
+    "exp": 81,
+    "expToNextLevel": 110,
+    "money": 1562,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Cá Rô Đồng": 2,
+        "Rác": 1
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 97,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 27
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 14,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 3,
+      "junkCaught": 1,
+      "commonCaught": 2,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760194868097,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760194821770
+      }
+    },
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 7,
+        "activeQuests": [
+          {
+            "questId": "main_02",
+            "progress": 4,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 112,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_06",
+            "progress": 4,
+            "completed": false
+          },
+          {
+            "questId": "main_07",
+            "progress": 54,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 393
+  },
+  "844113679171431432": {
+    "userId": "844113679171431432",
+    "name": "Bot Của Minh Tuan",
+    "level": 1,
+    "exp": 0,
+    "expToNextLevel": 100,
+    "money": 200,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {},
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 100,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 10
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 0,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 0,
+      "junkCaught": 0,
+      "commonCaught": 0,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 0,
+      "attack": 0
+    },
+    "achievements": {},
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 5,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_04",
+            "progress": 1,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 40
+  },
+  "8990226502290824094": {
+    "userId": "8990226502290824094",
+    "name": "Bot Của Minh Tuan",
+    "level": 1,
+    "exp": 0,
+    "expToNextLevel": 100,
+    "money": 200,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {},
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 100,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 10
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 0,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 0,
+      "junkCaught": 0,
+      "commonCaught": 0,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 0,
+      "attack": 0
+    },
+    "achievements": {},
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 5,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_04",
+            "progress": 1,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 40
+  },
+  "67696723745018663": {
+    "userId": "67696723745018663",
+    "name": "Tấn Khoa",
+    "level": 5,
+    "exp": 131,
+    "expToNextLevel": 146,
+    "money": 7934,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Cá Trắm Cỏ": 1,
+        "Cá Diếc": 1
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 98,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 83,
+        "bait_shrimp": 15
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 15,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 2,
+      "junkCaught": 0,
+      "commonCaught": 1,
+      "rareCaught": 1,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760367092168,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760229743273
+      },
+      "first_rare": {
+        "claimed": true,
+        "date": 1760229743273
+      }
+    },
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 9,
+        "activeQuests": [
+          {
+            "questId": "main_02",
+            "progress": 2,
+            "completed": false
+          },
+          {
+            "questId": "main_06",
+            "progress": 4,
+            "completed": false
+          },
+          {
+            "questId": "main_07",
+            "progress": 54,
+            "completed": false
+          },
+          {
+            "questId": "main_08",
+            "progress": 5,
+            "completed": false
+          },
+          {
+            "questId": "main_09",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 1867
+  },
+  "5343448855869652121": {
+    "userId": "5343448855869652121",
+    "name": "Tâm Hoàng 卍卐",
+    "level": 2,
+    "exp": 10,
+    "expToNextLevel": 110,
+    "money": 1454,
+    "teamId": "1760415556640",
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Cá Diếc": 1
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 99,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 29
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 5,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 1,
+      "junkCaught": 0,
+      "commonCaught": 1,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760435836244,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760435831245
+      }
+    },
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 6,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 4,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 2,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 54,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_06",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 300
+  },
+  "4418851299731475215": {
+    "userId": "4418851299731475215",
+    "name": "Tâm Hoàng 卍卐",
+    "level": 1,
+    "exp": 0,
+    "expToNextLevel": 100,
+    "money": 200,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {},
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 100,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 10
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 0,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 0,
+      "junkCaught": 0,
+      "commonCaught": 0,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 0,
+      "attack": 0
+    },
+    "achievements": {},
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 5,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_04",
+            "progress": 1,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 40
+  },
+  "3677558720478555063": {
+    "userId": "3677558720478555063",
+    "name": "A Di Đà Phật",
+    "level": 1,
+    "exp": 0,
+    "expToNextLevel": 100,
+    "money": 200,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {},
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 100,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 10
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 0,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 0,
+      "junkCaught": 0,
+      "commonCaught": 0,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 0,
+      "attack": 0
+    },
+    "achievements": {},
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 5,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_04",
+            "progress": 1,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 40
+  },
+  "4381957212554125937": {
+    "userId": "4381957212554125937",
+    "name": "Nhat An",
+    "level": 6,
+    "exp": 91,
+    "expToNextLevel": 160,
+    "money": 10292,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {
+        "Tôm Tép": 1,
+        "Cá Diếc": 1,
+        "Cá Rô Đồng": 1,
+        "Cá Trắm Cỏ": 1
+      },
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 96,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 121,
+        "bait_shrimp": 15
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 28,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 4,
+      "junkCaught": 0,
+      "commonCaught": 3,
+      "rareCaught": 1,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 1760443330776,
+      "attack": 0
+    },
+    "achievements": {
+      "first_catch": {
+        "claimed": true,
+        "date": 1760436105323
+      },
+      "first_rare": {
+        "claimed": true,
+        "date": 1760443325776
+      }
+    },
+    "lastDiemDanh": 1760436159261,
+    "diemDanhStreak": 1,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 10,
+        "activeQuests": [
+          {
+            "questId": "main_02",
+            "progress": 6,
+            "completed": false
+          },
+          {
+            "questId": "main_06",
+            "progress": 12,
+            "completed": false
+          },
+          {
+            "questId": "main_07",
+            "progress": 234,
+            "completed": false
+          },
+          {
+            "questId": "main_09",
+            "progress": 2,
+            "completed": false
+          },
+          {
+            "questId": "main_10",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "score": 440
+  },
+  "1985060838466778065": {
+    "userId": "1985060838466778065",
+    "name": "Nqduanツ",
+    "level": 1,
+    "exp": 0,
+    "expToNextLevel": 100,
+    "money": 200,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {},
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 100,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 10
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 0,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 0,
+      "junkCaught": 0,
+      "commonCaught": 0,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 0,
+      "attack": 0
+    },
+    "achievements": {},
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 5,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_04",
+            "progress": 1,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    }
+  },
+  "437902108620910172": {
+    "userId": "437902108620910172",
+    "name": "Nqduanツ",
+    "level": 1,
+    "exp": 0,
+    "expToNextLevel": 100,
+    "money": 200,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {},
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 100,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 10
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 0,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 0,
+      "junkCaught": 0,
+      "commonCaught": 0,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 0,
+      "attack": 0
+    },
+    "achievements": {},
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 5,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_04",
+            "progress": 1,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    }
+  },
+  "7852322700684854343": {
+    "userId": "7852322700684854343",
+    "name": "Nqduanツ",
+    "level": 1,
+    "exp": 0,
+    "expToNextLevel": 100,
+    "money": 200,
+    "teamId": null,
+    "currentArea": 1,
+    "equipment": {
+      "rod": "rod_wood",
+      "bait": "bait_earthworm"
+    },
+    "inventory": {
+      "fish": {},
+      "rods": [
+        {
+          "id": "rod_wood",
+          "currentDurability": 100,
+          "castsSinceLoss": 0
+        }
+      ],
+      "baits": {
+        "bait_earthworm": 10
+      },
+      "tools": [],
+      "materials": {},
+      "consumables": {},
+      "gachaTickets": 0,
+      "mapsDiscovered": [
+        1
+      ]
+    },
+    "stats": {
+      "totalFishCaught": 0,
+      "junkCaught": 0,
+      "commonCaught": 0,
+      "rareCaught": 0,
+      "legendaryCaught": 0,
+      "mythicalCaught": 0,
+      "gachaSpins": 0,
+      "repairsMade": 0
+    },
+    "cooldowns": {
+      "cast": 0,
+      "attack": 0
+    },
+    "achievements": {},
+    "lastDiemDanh": 0,
+    "diemDanhStreak": 0,
+    "quests": {
+      "main": {
+        "lastQuestIndex": 5,
+        "activeQuests": [
+          {
+            "questId": "main_01",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_02",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_03",
+            "progress": 0,
+            "completed": false
+          },
+          {
+            "questId": "main_04",
+            "progress": 1,
+            "completed": false
+          },
+          {
+            "questId": "main_05",
+            "progress": 0,
+            "completed": false
+          }
+        ]
+      }
+    }
+  }
+}

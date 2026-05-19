@@ -1,0 +1,120 @@
+{
+  "5917783166544873104": {
+    "raos": [],
+    "raoCardOn": true
+  },
+  "7914670804174360422": [],
+  "3340586593561147992": {
+    "raos": [
+      {
+        "id": 1,
+        "content": "Bạn muốn thuê bot zalo,mua source bot zalo có mybot javascript, mua bot auto rải\n\nLiên hệ ngay với Nqduan qua link card ở dưới",
+        "times": [],
+        "intervalMs": 3600000
+      },
+      {
+        "id": 2,
+        "content": "Bạn muốn thuê bot zalo,mua source bot zalo có mybot javascript, mua bot auto rải\n\nLiên hệ ngay với Nqduan qua link card ở dưới",
+        "times": [
+          "00:00",
+          "01:00",
+          "02:00",
+          "03:00",
+          "04:00",
+          "05:00",
+          "06:00",
+          "07:00",
+          "08:00",
+          "09:00",
+          "10:00",
+          "11:00",
+          "12:00",
+          "13:00",
+          "14:00",
+          "15:00",
+          "16:00",
+          "17:00",
+          "18:00",
+          "19:00",
+          "20:00",
+          "21:00",
+          "22:00",
+          "23:00"
+        ],
+        "intervalMs": 0
+      },
+      {
+        "id": 3,
+        "content": "Bạn muốn thuê bot zalo,mua source bot zalo có mybot javascript, mua bot auto rải\n\nLiên hệ ngay với Nqduan qua link card ở dưới",
+        "times": ["04:44"],
+        "intervalMs": 0
+      },
+      {
+        "id": 4,
+        "content": "Bạn muốn thuê bot zalo,mua source bot zalo có mybot javascript, mua bot auto rải\n\nLiên hệ ngay với Nqduan qua card ở dưới",
+        "times": [],
+        "intervalMs": 3600000
+      }
+    ],
+    "raoCardOn": true
+  },
+  "237154226557141326": {
+    "raos": [
+      {
+        "id": 1,
+        "content": "Bạn muốn thuê bot zalo,mua source bot zalo có mybot javascript, mua bot auto rải\n\nLiên hệ ngay với Nqduan qua card ở dưới",
+        "times": [],
+        "intervalMs": 900000
+      },
+      {
+        "id": 2,
+        "content": "Bạn muốn thuê bot zalo,mua source bot zalo có mybot javascript, mua bot auto rải\n\nLiên hệ ngay với Nqduan qua card ở dưới",
+        "times": [],
+        "intervalMs": 3600000
+      }
+    ],
+    "raoCardOn": true
+  },
+  "5153892853970553218": {
+    "raos": [],
+    "raoCardOn": true
+  },
+  "4197268436290473275": {
+    "raos": [
+      {
+        "id": 1,
+        "content": "Ae muốn lấy file bot zalo free có thể vô group này nha\n\nLink group: https://zalo.me/g/ffqiqj984",
+        "times": [],
+        "intervalMs": 3600000
+      }
+    ],
+    "raoCardOn": false
+  },
+  "8852473928921421904": {
+    "raos": [
+      {
+        "id": 1,
+        "content": "1",
+        "times": ["14:33", "14:34"],
+        "intervalMs": 0
+      }
+    ],
+    "raoCardOn": true
+  },
+  "8009254765663333755": {
+    "raos": [],
+    "raoCardOn": false
+  },
+  "8279998367575790856": {
+    "raos": [],
+    "raoCardOn": true
+  },
+  "7622041353483411494": {
+    "raos": [],
+    "raoCardOn": false
+  },
+  "5931025232755055384": {
+    "raos": [],
+    "raoCardOn": false
+  }
+}
